@@ -1,0 +1,281 @@
+﻿*
+{
+    padding:0px;
+    margin:0px;
+    }
+div.banner ul
+    {
+        list-style:none;/*取消ul前面的符号*/
+        }
+        div.banner ul li
+        {
+            float:left;
+            margin-left:50px;/*与外部元素左边距离*/
+            height:100%;
+            }
+ div.banner ul li a, div.banner ul li a:visited
+{
+    
+    /*border: 0px #4e667d solid;边框 */
+    font-family:"微软雅黑";
+    color:Black;
+    /*color: #010304; 文字颜色 */
+    display: block; /* 此元素将显示为块级元素，此元素前后会带有换行符 */
+     /* 行高 line-height: 1.35em; */
+     /* 内部填充的距离 padding: 4px 20px; */
+    text-decoration: none; /* 不显示超链接下划线 */
+    white-space: nowrap;
+    margin-top: 0px;
+    font-size: x-large;
+}
+/* 所有class为banner的div中的ul中的a样式(鼠标移动到元素中的样式) */
+div.banner ul li a:hover
+{
+    /* 背景色  background-color:#E9EAEC; background-color:#000000;*/ 
+    color: #1179CA; /* 文字颜色 */
+    text-decoration: none; /* 不显示超链接下划线 */
+}
+/* 所有class为banner的div中的ul中的a样式(鼠标点击元素时的样式) */
+div.banner ul li a:active
+{
+   /* 背景色  background-color: #465c71;  */  
+    color: red; /* 文字颜色 */
+    text-decoration: none; /* 不显示超链接下划线 */
+}
+
+/*设置超链接的字体样式*/
+ div.ziti a, div.ziti a:visited
+{
+    font-size:18px;
+    /*border: 0px #4e667d solid;边框 */
+    color:#5F1084;
+    /*color: #010304; 文字颜色 */
+     /* 行高 line-height: 1.35em; */
+     /* 内部填充的距离 padding: 4px 20px; */
+    text-decoration: none; /* 不显示超链接下划线 */
+    /*white-space: nowrap;设置字体成一排显示，不换行*/
+}
+div.ziti a:hover
+{
+    /* background-color:#E9EAEC;*/
+    color:Blue;
+    text-decoration:none; /* 不显示超链接下划线 */
+}
+/* 所有class为banner的div中的ul中的a样式(鼠标点击元素时的样式) */
+div.ziti a:active
+{
+   /* 背景色  background-color: #465c71;  */  
+    color:Red ; /* 文字颜色 */
+    text-decoration: none; /* 不显示超链接下划线 */
+}
+
+div.ziti1 a:hover
+{
+    /* background-color:#E9EAEC;*/
+    color:blue;
+    text-decoration:none; /* 不显示超链接下划线 */
+}
+/* 所有class为banner的div中的ul中的a样式(鼠标点击元素时的样式) */
+div.ziti1 a:active
+{
+   /* 背景色  background-color: #465c71;  */  
+    color:Red ; /* 文字颜色 */
+    text-decoration: none; /* 不显示超链接下划线 */
+}
+ div.ziti2 a, div.ziti2 a:visited
+{
+    font-size:18px;
+    color:Gray;
+    text-decoration: none; 
+}
+div.ziti2 a:hover
+{
+    color:blue;
+    text-decoration:none;
+}
+/* 所有class为banner的div中的ul中的a样式(鼠标点击元素时的样式) */
+div.ziti2 a:active
+{
+   /* 背景色  background-color: #465c71;  */  
+    color:Red ; /* 文字颜色 */
+    text-decoration: none; /* 不显示超链接下划线 */
+}
+/*滚动图片设置*/
+marquee img
+{
+    margin:10px 10px 10px 10px;
+    border:1px solid #E6E6E6;
+    width:100px;
+    height:80px;
+    padding:10px 10px 10px 10px;
+    }
+div.table1  img
+{
+    margin:10px 10px 10px 10px;
+    border:1px solid #E6E6E6;
+    }
+div.table2  img
+{
+    margin:15px 15px 15px 15px;
+    border:1px solid #E6E6E6;
+    width:160px;
+    height:200px;
+    padding:2px 2px 2px 2px;
+    }
+  div.table2 div
+  {
+      margin-left:20px;
+      }  
+body 
+{
+     font-size:14px;
+     font-family:"宋体";
+     color:#666666;
+     background-color:#FFFFFF;
+     }
+a
+{
+    font-size:18px;
+    text-decoration:none;
+    color:Orange;
+    }
+hr
+ {
+     color:#E6E6E6;
+    }
+.fl
+{
+    float:left;
+    
+    }
+.fr
+{
+    float:right;
+    }
+.cl
+{
+     clear:both;
+    }
+#header /*头部*/
+{
+    height:180px;
+    
+    /*background-color:#F4F4F4;*/
+    }
+    #hezuo
+    {
+        /*border-bottom-color:Gray;
+        border-bottom-style:inset;
+        border-bottom-width:1px;
+        border:1px inset Gray;*/
+        margin-right:40px;
+        }
+#footer
+{
+    width:100%;
+    height:auto;
+    /*border-top:1px solid #F4F4F4;*/
+    background-color:#F4F4F4;
+    clear:both;
+    }
+#footer_1
+{
+    border-right:1px solid #000;
+    height:20px;
+    background-color:#212425;
+    
+    }
+/*浮动客服*/
+#floatDivBoxs
+{
+    width: 170px;
+    background: #fff;
+    position: fixed;
+    top: 100px;
+    right: -170px;
+    z-index: 999;
+}
+#floatDivBoxs .floatDtt
+{
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #f08326;
+    color: #fff;
+    font-size: 18px;
+    text-indent: 22px;
+    position: relative;
+}
+#floatDivBoxs .floatDqq
+{
+    padding: 0 14px;
+}
+#floatDivBoxs .floatDqq li
+{
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+    border-bottom: 1px solid #e3e3e3;
+    text-align: right;
+}
+#floatDivBoxs .floatDqq li img
+{
+    float: left;
+    margin-top: 7px;
+}
+#floatDivBoxs .floatDtxt
+{
+    font-size: 18px;
+    color: #333;
+    padding: 12px 14px;
+}
+#floatDivBoxs .floatDtel
+{
+    padding: 0 0 15px 10px;
+}
+#floatDivBoxs .floatImg
+{
+    text-align: center;
+    padding: 10px;
+    background: #EBEBEB;
+}
+#floatDivBoxs .floatImg img
+{
+    margin-bottom: 5px;
+}
+#floatDivBoxs .floatDtel img
+{
+    display: block;
+}
+#floatDivBoxs .floatDbg
+{
+    width: 100%;
+    height: 20px;
+    background: url(../images/online_botbg.jpg) no-repeat;
+    box-shadow: -2px 0 3px rgba(0,0,0,0.25);
+}
+.floatShadow
+{
+    background: #fff;
+    box-shadow: -2px 0 3px rgba(0,0,0,0.25);
+}
+#rightArrow
+{
+    width: 50px;
+    height: 45px;
+    background: url(../images/online_arrow.jpg) no-repeat;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 999;
+}
+#rightArrow a
+{
+    display: block;
+    height: 45px;
+}
+.menu
+{
+    height: 50px;
+}
+    

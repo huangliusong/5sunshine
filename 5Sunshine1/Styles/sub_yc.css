@@ -1,0 +1,32 @@
+﻿body 
+{
+    font-size:14px;
+    font-family:@宋体;  
+}
+#sub_tupiao
+{
+    width:auto;
+    height:200px;
+    }
+    div.sub_tupiao
+{
+    border:1px solid black;
+    margin-left:5%;
+    padding:1%;
+    width:180px;
+    height:250px;
+    
+    }
+     table.t1 td
+     {
+         width:200px;
+         height:220px;
+         
+         }
+    table.t1 td img
+    {
+    border:1px solid gray;
+    margin:10px 20px 10px 20px;
+    width:160px;
+    height:200px;
+        }

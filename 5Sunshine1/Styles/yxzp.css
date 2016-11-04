@@ -1,0 +1,45 @@
+﻿body {
+}
+table.xz tr td img
+{
+    margin:15px 15px 15px 15px;
+    border:1px solid #E6E6E6;
+    width:160px;
+    height:200px;
+    padding:2px 2px 2px 2px;
+    }
+        table.xz tr td div
+{
+    font-family:微软雅黑;
+    font-size:16px;
+    margin-left:20px;
+    }
+table.xzd tr td img
+{
+    margin:10px 10px 10px 10px;
+    border:1px solid #E6E6E6;
+    width:300px;
+    height:200px;
+    padding:2px 2px 2px 2px;
+    }
+    table.xzd tr td div
+{
+    font-family:微软雅黑;
+    font-size:16px;
+    margin-left:20px;
+    }
+table.qt tr td img
+{
+    margin:15px 15px 15px 15px;
+    border:1px solid #E6E6E6;
+    width:200px;
+    height:auto;
+    padding:2px 2px 2px 2px;
+    }
+        table.qt tr td div
+{
+    font-family:微软雅黑;
+    font-size:16px;
+    margin-left:20px;
+    }   
+      

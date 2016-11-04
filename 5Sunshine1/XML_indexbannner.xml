@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+	<Item url="Index.aspx" name="首页"></Item>
+	<Item url="yic.aspx" name="艺潮">
+		
+	</Item>
+	<Item url="Index.aspx" name="校园资讯">
+		<Option url="Index.aspx" name="社团">
+		</Option>
+		<Option url="Index.aspx" name="学生会"></Option>
+	</Item>
+	<Item url="Index.aspx" name="作品分享"></Item>
+	<Item url="Index.aspx" name="关于我们"></Item>
+</Root>

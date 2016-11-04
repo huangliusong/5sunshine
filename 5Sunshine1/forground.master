@@ -1,0 +1,326 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="forground.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>我享晒 5Sunshine</title>
+    <link href="Styles/index.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/sub_yc.css" rel="stylesheet" type="text/css" />
+    <link rel="Shortcut Icon" href="images/x.png" />
+    <link href="Styles/lanrenzhijia.css" rel="stylesheet" type="text/css" />
+    <link href="css/gh_materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <!-- 字体-->
+    <%--评论框--%>
+    <link href="css/smohan.face.css" type="text/css" rel="stylesheet" />
+    <%-- <link href="http://www.js-css.cn/jscode/jscode.css" rel="stylesheet" /> --%>
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/smohan.face.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("a.face").smohanfacebox({
+                Event: "click", //触发事件	
+                divid: "Smohan_FaceBox", //外层DIV ID
+                textid: "Smohan_text" //文本框 ID
+            });
+            //解析表情  $('#Zones').replaceface($('#Zones').html());
+        });
+       
+    </script>
+    <%--评论框--%>
+    <link href="css/prism.css" rel="stylesheet" />
+    <link href="css/gh_materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <%--<script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript">
+</script>--%>
+    <script type="text/javascript">
+        if (!window.jQuery) {
+            document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>');
+        }
+    </script>
+    <script src="bean/materialize.js" type="text/javascript"></script>
+    <style>
+        /* fallback */
+        @font-face
+        {
+            font-family: 'Material Icons';
+            font-style: normal;
+            font-weight: 400;
+            src: local('Material Icons'), local('MaterialIcons-Regular'), url(http://fonts.gstatic.com/s/materialicons/v14/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+        }
+        
+        .material-icons
+        {
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+        .back
+        {
+            background: #d8d8d8;
+            height: 70px;
+            margin: auto 0;
+        }
+        .ulcls
+        {
+            list-style: none;
+            padding-left: 20px;
+            line-height: 70px;
+        }
+        .logowidth
+        {
+            width: 220px;
+        }
+        .pl10
+        {
+            padding-left: 10px;
+        }
+        .menupos
+        {
+            top: 0px;
+            position: absolute;
+            left: 260px;
+            overflow: hidden;
+            height: 70px;
+            width: 700px;
+            line-height: 70px;
+        }
+        .firstli
+        {
+            background: #65765f;
+            width: 80px;
+            padding: 5px;
+            height: 70px;
+            float: left;
+            text-align: center;
+            line-height: 70px;
+        }
+        .sencli
+        {
+            background: #39bd05;
+            width: 100px;
+            text-align: center;
+            float: left;
+            height: 70px;
+            line-height: 70px;
+            border-left: 1px solid #d8d8d8;
+        }
+        .threeli
+        {
+            background: #65765f;
+            width: 80px;
+            padding: 5px;
+            height: 70px;
+            float: left;
+            text-align: center;
+            line-height: 70px;
+            border-left: 1px solid #d8d8d8;
+        }
+        .lia
+        {
+            color: #ffffff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .textpos
+        {
+            text-align: left;
+            top: 2px;
+            position: absolute;
+            right: 50px;
+            overflow: hidden;
+            font-size: 12px;
+            color: #363d34;
+            line-height: 16px;
+        }
+        .texta
+        {
+            color: #0652ec;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <div style="width: 100%; background-color: #fff; z-index: 9999; position: relative;">
+        <nav>
+          <div>
+            <a href="index1.aspx" style=" margin-left:50px; text-decoration: none;">5sunshine</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+				<li><a style="text-decoration: none;" href="https://pixabay.com/"><i class="material-icons">search</i></a></li>
+			  <li><a style="text-decoration: none;" href="uploading.aspx">上传</a></li>
+ <li><a style="text-decoration: none;" href="uploading.aspx"> 消息中心<asp:DataList ID="DataListaa" runat="server"><ItemTemplate><%#Eval("num")%>条未读</ItemTemplate></asp:DataList></a></li><li><a style="text-decoration: none;" href="http://mobile.colorotate.org/" target="_black">在线工具</a></li>
+              <li><asp:Label ID="register" runat="server" Text=""></asp:Label></li>
+              <li><asp:Label ID="login" runat="server" Text="" ></asp:Label></li>
+                </li>
+              
+            </ul>
+          </div>
+        </nav>
+    </div>
+    <div>
+        <!--搜索 -->
+        <div id="header">
+            <div style="width: 1350px; height: 30px;">
+                <div style="height: 60px;">
+                </div>
+                <div style="width: auto; height: auto; clear: both; margin-left: 500px; margin-top: 30px;">
+                    <%--请输入关键字：<asp:TextBox ID="Txt_sousuo" runat="server" OnClick="this,value= ''  " Height="25px"
+                            Width="300px" Text="按标题、作品、设计师搜索" BorderColor="Silver" BackColor="#FFFFFD"></asp:TextBox>&nbsp;
+                        &nbsp;
+                        <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="images/sousuo03.png"
+                            ImageAlign="AbsBottom" OnClick="ImageButton1_Click" Height="31px" 
+                            Width="45px" />--%>
+                    <div style="height: 30px; line-height: 30px;">
+                        <div style="float: left;">
+                            请输入关键字：<asp:TextBox ID="Txt_sousuo" runat="server" OnClick="this,value= ''  " Height="25px"
+                                Width="300px" Text="按标题、作品、设计师搜索" BorderColor="Silver" BackColor="#FFFFFD"></asp:TextBox>
+                        </div>
+                        <div style="float: left;">
+                            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="images/sousuo03.png"
+                                ImageAlign="AbsBottom" OnClick="ImageButton1_Click" />
+                        </div>
+                    </div>
+                    <div style="clear: both">
+                    </div>
+                    <div style="margin-top: 10px;">
+                        热搜：ps技巧&nbsp;&nbsp;&nbsp; 平面设计师&nbsp;&nbsp;&nbsp;明信片&nbsp;&nbsp;&nbsp;艺潮广告工作室&nbsp;&nbsp;&nbsp;广西外国语学院信息工程学院
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <!--友情链接-->
+    <div style="height: 100px; width: 100%; clear: both;">
+    </div>
+    <div style="margin-left: 6%;">
+        <div style="font-size: 16px; clear: both;">
+            <img alt="" src="images/sanjiao.png" />友情链接</div>
+        <div style="margin-top: 10px; margin-bottom: 50px;">
+            <table cellpadding="20px">
+                <tr>
+                    <td>
+                        <div class="ziti2">
+                            <a href="#">广西外国语学院 |</a></div>
+                    </td>
+                    <td>
+                        <div class="ziti2">
+                            &nbsp; <a href="#">广外院信息工程学院|</a></div>
+                    </td>
+                    <td>
+                        <div class="ziti2">
+                            &nbsp; <a href="#">我爱自学网|</a></div>
+                    </td>
+                    <td>
+                        <div class="ziti2">
+                            &nbsp; <a href="#">天涯社区|</a></div>
+                    </td>
+                    <td>
+                        <div class="ziti2">
+                            &nbsp; <a href="#">昵图网|</a></div>
+                    </td>
+                    <td>
+                        <div class="ziti2">
+                            &nbsp; <a href="https://www.baidu.com/index.php?tn=56060048_4_pg&ch=12">百度一下你就知道</a></div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div id="footer">
+        <div style="width: 100%; height: 100%; clear: both; border-top: 1px solid #E6E6E6;">
+            <div align="center" style="margin-top: 20px; font-size: 14px">
+                我享晒 5sunshine</div>
+            <div align="center" style="margin-top: 10px; font-size: 14px">
+                分享作品 晒出风采 收获你我他</div>
+            <div align="center" style="margin-top: 10px; font-size: 14px">
+                了解5sunshine|5sunshine资讯|帮助中心|加入我们|咨询热线</div>
+            <div align="center" style="margin-top: 10px; margin-bottom: 20px; font-size: 14px">
+                广西ICP证070598号网站备案号 广西公网安备公网安备 11010502023255 Copyright © 2016,CSTO.COM, csdnstore.com
+                All right
+                <div align="center" style="margin-top: 10px; font-size: 14px">
+                    版权归广西外国语学院sunshine团队所有 如有雷同 纯属巧合</div>
+            </div>
+        </div>
+    </div>
+    <!-- 代码部分 begin -->
+    <div class="main-im">
+        <div id="open_im" class="open-im">
+            &nbsp;</div>
+        <div class="im_main" id="im_main">
+            <div id="close_im" class="close-im">
+                <a href="javascript:void(0);" title="点击关闭">&nbsp;</a></div>
+            <a href="tencent://message/?uin=1138127608&amp;Site=sc.chinaz.com&amp;Menu=yes" target="_blank"
+                class="im-qq qq-a" title="在线QQ客服">
+                <div class="qq-container">
+                </div>
+                <div class="qq-hover-c">
+                    <img class="img-qq" src="http://demo.lanrenzhijia.com/2015/service0119/images/qq.png"></div>
+                <span>QQ在线咨询</span> </a>
+            <div class="im-tel">
+            </div>
+            <div class="im-footer" style="position: relative">
+                <div class="weixing-container">
+                    <div class="weixing-show">
+                        <div class="weixing-txt">
+                            微信扫一扫<br>
+                            打开懒人之家</div>
+                        <img class="weixing-ma" src="http://demo.lanrenzhijia.com/2015/service0119/images/weixing-ma.jpg">
+                        <div class="weixing-sanjiao">
+                        </div>
+                        <div class="weixing-sanjiao-big">
+                        </div>
+                    </div>
+                </div>
+                <div class="go-top">
+                    <a href="javascript:;" title="返回顶部"></a>
+                </div>
+                <div style="clear: both">
+                </div>
+            </div>
+        </div>
+    </div>
+    <%-- <script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>--%>
+    <script>
+        $(function () {
+            $('#close_im').bind('click', function () {
+                $('#main-im').css("height", "0");
+                $('#im_main').hide();
+                $('#open_im').show();
+            });
+            $('#open_im').bind('click', function (e) {
+                $('#main-im').css("height", "272");
+                $('#im_main').show();
+                $(this).hide();
+            });
+            $('.go-top').bind('click', function () {
+                $(window).scrollTop(0);
+            });
+            $(".weixing-container").bind('mouseenter', function () {
+                $('.weixing-show').show();
+            })
+            $(".weixing-container").bind('mouseleave', function () {
+                $('.weixing-show').hide();
+            });
+        });
+    </script>
+    <!-- 代码部分 end-->
+    </form>
+</body>
+</html>
